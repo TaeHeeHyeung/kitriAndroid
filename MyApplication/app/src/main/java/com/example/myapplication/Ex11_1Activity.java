@@ -18,7 +18,8 @@ public class Ex11_1Activity extends AppCompatActivity {
         ListView lv= findViewById(R.id.lv);
         String[] arr= {"1","2","3","4"};
         ArrayAdapter<String> adpater = new ArrayAdapter<String>(this,
-                android.R.simple_list_item_1,
+                android.R.layout.simple_list_item_1,
                 arr);
+        lv.setAdapter(adpater);
     }
 }
