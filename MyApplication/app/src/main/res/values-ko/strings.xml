@@ -1,0 +1,11 @@
+<resources>
+
+
+    <string name="app_name">테스트앱</string>
+    <string name="welcome">환영합니다.</string>
+    <string name="click">클릭!!</string>
+
+    <string name="btn1">버튼 1</string>
+    <string name="btn2">버튼 2</string>
+    <string name="text_view">여긴 텍스트뷰입니다. 텍스트 내용을 길게 만들겠습니다. 자동줄바꿈</string>
+</resources>

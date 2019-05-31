@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/bt_ex42"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="실습42(레이아웃배치)"
+        android:textSize="20sp"
+        android:onClick="btClick"/>
+    <Button
+        android:id="@+id/bt_ex43"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="실습43(계산기)"
+        android:textSize="20sp"
+        android:onClick="btClick"/>
+    <Button
+        android:id="@+id/bt_ex51"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="실습51(레이아웃배치)"
+        android:textSize="20sp"
+        android:onClick="btClick"/>
+    <Button
+        android:id="@+id/bt_ex4_24"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="실습4_24(컴포넌트)"
+        android:textSize="20sp"
+        android:onClick="btClick"/>
+    <Button
+        android:id="@+id/bt_inflation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="inflation(인플레이션)"
+        android:textSize="20sp"
+        android:onClick="btClick"/>
+    <Button
+        android:id="@+id/bt_newActivity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="새화면 띄우기(닫기)"
+        android:textSize="20sp"
+        android:onClick="btClick"/>
+    <Button
+        android:id="@+id/bt_ex_10_2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="영화 별점주기"
+        android:textSize="20sp"
+        android:onClick="btClick"/>
+    <Button
+        android:id="@+id/bt_ex_10_20"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="묵시적인텐트"
+        android:textSize="20sp"
+        android:onClick="btClick"/>
+    <Button
+        android:id="@+id/bt_ex_10_3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="액티비티라이프사이클"
+        android:textSize="20sp"
+        android:onClick="btClick"/>
+
+    <Button
+        android:id="@+id/login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="로그인"
+        android:textSize="20sp"
+        android:onClick="btClick"/>
+    <Button
+        android:id="@+id/call_component"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="다른앱 띄우기"
+        android:textSize="20sp"
+        android:onClick="btClick"/>
+    <!--
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/welcome"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/bt1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="91dp"
+        android:text="@string/click"
+        app:layout_constraintBottom_toTopOf="@+id/textView2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/welcome" />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/click"/>
+
+    </LinearLayout>-->
+
+</LinearLayout>

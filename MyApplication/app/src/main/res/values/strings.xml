@@ -1,0 +1,13 @@
+<resources>
+
+
+    <string name="app_name">My Application</string>
+    <string name="welcome">Hello World!!</string>
+    <string name="click">click!!</string>
+    <string name="btn1">button 1</string>
+    <string name="btn2">button 2</string>
+    <string name="text_view">this is textview.</string>
+    <string name="title_activity_ex51">Ex51</string>
+    <string name="title_activity_new">NewActivity</string>
+    <string name="title_activity_ex10_20">Ex10_20Activity</string>
+</resources>
