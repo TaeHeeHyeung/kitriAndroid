@@ -27,6 +27,12 @@ public class MainActivity extends AppCompatActivity {
         activityMap.put(R.id.bt_ex_10_3, Ex10_3Activity.class);
         activityMap.put(R.id.login, LoginActivity.class);
         activityMap.put(R.id.call_component, CallComponentActivity.class);
+        activityMap.put(R.id.bt_ex_11_1,  Ex11_1Activity.class);
+        activityMap.put(R.id.custom_listview_activity,  CustomListViewActivity.class);
+        activityMap.put(R.id.seekbar_activity,  SeekBarActivity.class);
+        activityMap.put(R.id.network_activity,  NetworkActivity.class);
+
+
 //        Button btn = findViewById(R.id.bt1);
 //        String btText= btn.getText().toString();
 //
