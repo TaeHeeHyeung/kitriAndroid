@@ -8,7 +8,16 @@ public class Product implements Serializable {
 	transient private int prod_price; //직렬화에서 제외
 	private String prod_detail;
 	private ProductCategory productCategory;
-	
+	/*private int prod_cnt=0;
+
+	public void setProd_cnt(int prod_cnt) {
+		this.prod_cnt = prod_cnt;
+	}
+
+	public int getProd_cnt() {
+		return prod_cnt;
+	}
+*/
 	public Product() {
 		super();
 	}
@@ -51,11 +60,18 @@ public class Product implements Serializable {
 	public void setProductCategory(ProductCategory productCategory) {
 		this.productCategory = productCategory;
 	}
+
 	@Override
 	public String toString() {
-		return "Product [prod_no=" + prod_no + ", prod_name=" + prod_name + ", prod_price=" + prod_price
-				+ ", prod_detail=" + prod_detail + ", productCategory=" + productCategory + "]";
+		return "Product{" +
+				"prod_no='" + prod_no + '\'' +
+				", prod_name='" + prod_name + '\'' +
+				", prod_price=" + prod_price +
+				", prod_detail='" + prod_detail + '\'' +
+				", productCategory=" + productCategory +
+				'}';
 	}
+
 	@Override
 	public int hashCode() {
 		final int prime = 31;

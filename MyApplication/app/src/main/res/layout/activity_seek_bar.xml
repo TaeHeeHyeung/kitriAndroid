@@ -22,5 +22,9 @@
         android:layout_height="wrap_content"
         android:text="처음으로"
         android:onClick="init"/>
-
+    <TextView
+        android:id="@+id/tvResult"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="30sp"/>
 </LinearLayout>

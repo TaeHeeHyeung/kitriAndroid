@@ -21,7 +21,7 @@ public class EX43Activity extends AppCompatActivity {
         e2= findViewById(R.id.edit2);
         result= findViewById(R.id.textResult);
         text = result.getText().toString();
-//        findViewById(R.id.bt1).setOnClickListener((view)->{});
+//        findViewById(R.id.bt1).setOnClickListener((listView)->{});
         findViewById(R.id.bt_plus).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

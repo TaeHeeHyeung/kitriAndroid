@@ -15,9 +15,9 @@ public class Ex42Activity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_ex42);
 //        Button btn1 = findViewById(R.id.bt1);
-//        view.setOnClickListener(new View.OnClickListener() {
+//        listView.setOnClickListener(new View.OnClickListener() {
 //            @Override
-//            public void onClick(View view) {
+//            public void onClick(View listView) {
 
 //             });//end onClick
 //          }
@@ -25,7 +25,7 @@ public class Ex42Activity extends AppCompatActivity {
 
 
 
-//        btn1.setOnClickListener(view -> {Toast.makeText(Ex42Activity.this, "람다표현식고고", Toast.LENGTH_LONG).show(); }); //java8부터 사용가능
+//        btn1.setOnClickListener(listView -> {Toast.makeText(Ex42Activity.this, "람다표현식고고", Toast.LENGTH_LONG).show(); }); //java8부터 사용가능
     }//end onCreate
 
     public void btClick(View view) {

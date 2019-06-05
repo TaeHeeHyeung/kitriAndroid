@@ -6,6 +6,8 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Toast;
 
+import org.json.JSONArray;
+
 import java.util.HashMap;
 
 public class MainActivity extends AppCompatActivity {
@@ -31,6 +33,11 @@ public class MainActivity extends AppCompatActivity {
         activityMap.put(R.id.custom_listview_activity,  CustomListViewActivity.class);
         activityMap.put(R.id.seekbar_activity,  SeekBarActivity.class);
         activityMap.put(R.id.network_activity,  NetworkActivity.class);
+        activityMap.put(R.id.custom_listview_network_activity,  CustomListViewNetworkActivity.class);
+        activityMap.put(R.id.exchange_rate_activity,  ExchangeRateActivity.class);
+        activityMap.put(R.id.activity_view_cart,  ViewCartActivity.class);
+
+
 
 
 //        Button btn = findViewById(R.id.bt1);
@@ -45,7 +52,7 @@ public class MainActivity extends AppCompatActivity {
 //
 //        btn.setOnClickListener(new View.OnClickListener() {
 //            @Override
-//            public void onClick(View view) {
+//            public void onClick(View listView) {
 //                Toast.makeText(getApplicationContext(),"버튼이눌렸습니다.",Toast.LENGTH_SHORT).show();
 //            }
 //        });//end btn

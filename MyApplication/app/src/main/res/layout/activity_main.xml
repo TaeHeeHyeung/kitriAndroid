@@ -8,6 +8,8 @@
     android:padding="10dp"
     tools:context=".MainActivity">
 
+
+
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent">
@@ -121,6 +123,30 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="네트워크"
+                android:textSize="20sp"
+                android:onClick="btClick"/>
+
+            <Button
+                android:id="@+id/custom_listview_network_activity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="커스텀리스트뷰(네트워크)"
+                android:textSize="20sp"
+                android:onClick="btClick"/>
+
+
+            <Button
+                android:id="@+id/exchange_rate_activity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="환율(api)"
+                android:textSize="20sp"
+                android:onClick="btClick"/>
+            <Button
+                android:id="@+id/activity_view_cart"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="장바구니보기"
                 android:textSize="20sp"
                 android:onClick="btClick"/>
 

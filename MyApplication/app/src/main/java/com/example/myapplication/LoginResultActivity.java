@@ -3,11 +3,22 @@ package com.example.myapplication;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
+import android.widget.EditText;
 import android.widget.TextView;
+
+import java.io.DataOutputStream;
+import java.io.IOException;
+import java.io.InputStream;
+import java.net.HttpURLConnection;
+import java.net.MalformedURLException;
+import java.net.URL;
 
 public class LoginResultActivity extends AppCompatActivity {
     String id;
+    private final String TAG ="LoginResultActivity";
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -16,20 +27,21 @@ public class LoginResultActivity extends AppCompatActivity {
         id = intent.getStringExtra("id");
         String pass = intent.getStringExtra("pass");
 
-        TextView tvResult =findViewById(R.id.tvResult);
-        tvResult.setText("아이디"+ id+ "비밀번호"+ pass+"로그인에 성공하였습니다.");
+        TextView tvResult = findViewById(R.id.tvResult);
+        tvResult.setText("아이디" + id + "비밀번호" + pass + "로그인에 성공하였습니다.");
     }
-    public void close(View view){
+
+
+    public void close(View view) {
         //
-        Intent intent = new Intent(this,MainActivity.class);
+        Intent intent = new Intent(this, MainActivity.class);
 //      intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
 //      startActivity(intent);
 
 
-        intent.putExtra("msg",id + "님 환영합니다.");
-
+        intent.putExtra("msg", id + "님 환영합니다.");
         //onNewIntent도호출됨
-        intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP|Intent.FLAG_ACTIVITY_SINGLE_TOP);
+        intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP | Intent.FLAG_ACTIVITY_SINGLE_TOP);
         startActivity(intent);
 
 
