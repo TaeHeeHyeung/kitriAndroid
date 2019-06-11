@@ -6,8 +6,6 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Toast;
 
-import org.json.JSONArray;
-
 import java.util.HashMap;
 
 public class MainActivity extends AppCompatActivity {
@@ -29,15 +27,16 @@ public class MainActivity extends AppCompatActivity {
         activityMap.put(R.id.bt_ex_10_3, Ex10_3Activity.class);
         activityMap.put(R.id.login, LoginActivity.class);
         activityMap.put(R.id.call_component, CallComponentActivity.class);
-        activityMap.put(R.id.bt_ex_11_1,  Ex11_1Activity.class);
-        activityMap.put(R.id.custom_listview_activity,  CustomListViewActivity.class);
-        activityMap.put(R.id.seekbar_activity,  SeekBarActivity.class);
-        activityMap.put(R.id.network_activity,  NetworkActivity.class);
-        activityMap.put(R.id.custom_listview_network_activity,  CustomListViewNetworkActivity.class);
-        activityMap.put(R.id.exchange_rate_activity,  ExchangeRateActivity.class);
-        activityMap.put(R.id.activity_view_cart,  ViewCartActivity.class);
-
-
+        activityMap.put(R.id.bt_ex_11_1, Ex11_1Activity.class);
+        activityMap.put(R.id.custom_listview_activity, CustomListViewActivity.class);
+        activityMap.put(R.id.seekbar_activity, SeekBarActivity.class);
+        activityMap.put(R.id.network_activity, NetworkActivity.class);
+        activityMap.put(R.id.custom_listview_network_activity, CustomListViewNetworkActivity.class);
+        activityMap.put(R.id.exchange_rate_activity, ExchangeRateActivity.class);
+        activityMap.put(R.id.activity_view_cart, ViewCartActivity.class);
+        activityMap.put(R.id.bt_ex6_17, Ex6_17Activity.class);
+        activityMap.put(R.id.bt_ex8_3, Ex8_3Activity.class);
+        activityMap.put(R.id.bt_ex12_1, Ex12_1Activity.class);
 
 
 //        Button btn = findViewById(R.id.bt1);
@@ -66,7 +65,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onNewIntent(Intent intent) {
         super.onNewIntent(intent);
         String msg = intent.getStringExtra("msg");
-        Toast.makeText(this, msg,Toast.LENGTH_LONG).show();
+        Toast.makeText(this, msg, Toast.LENGTH_LONG).show();
     }
 }
 

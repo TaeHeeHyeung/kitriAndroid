@@ -149,6 +149,28 @@
                 android:text="장바구니보기"
                 android:textSize="20sp"
                 android:onClick="btClick"/>
+            <Button
+                android:id="@+id/bt_ex6_17"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="탭호스트"
+                android:textSize="20sp"
+                android:onClick="btClick"/>
+            <Button
+                android:id="@+id/bt_ex8_3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="내부파일입출력(일기장)"
+                android:textSize="20sp"
+                android:onClick="btClick"/>
+
+            <Button
+                android:id="@+id/bt_ex12_1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="데이터베이스(sqllite)"
+                android:textSize="20sp"
+                android:onClick="btClick"/>
 
         </LinearLayout>
 

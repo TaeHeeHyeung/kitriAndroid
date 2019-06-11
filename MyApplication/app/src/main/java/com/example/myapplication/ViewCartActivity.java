@@ -7,11 +7,16 @@ import android.os.Bundle;
 import android.util.Log;
 import android.widget.Toast;
 
+import com.fasterxml.jackson.databind.JsonNode;
+import com.fasterxml.jackson.databind.ObjectMapper;
+import com.kitri.dto.Product;
+
 import java.io.ByteArrayOutputStream;
 import java.io.IOException;
 import java.io.InputStream;
 import java.net.HttpURLConnection;
 import java.net.URL;
+import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
@@ -56,9 +61,18 @@ public class ViewCartActivity extends AppCompatActivity {
                     byte[] byteData =null;
                     byteData = byteArrayOutputStream.toByteArray();
                     String jsonResult = new String(byteData,0,byteData.length);
-
-                    //String jsonResult = sb.toString();
                     Log.i(TAG,"jsonResult응답결과: "+jsonResult);
+
+                    Map<Product, Integer> productCountMap = new HashMap<>();
+                    ObjectMapper mapper = new ObjectMapper();
+                    JsonNode root =mapper.readTree(jsonResult);
+                    if(root.isArray()){
+                        for(JsonNode node: root){
+                            JsonNode pnode =node.path("product");
+                        }
+                    }
+
+
                 }
 
              /*   if(responseCode == HttpURLConnection.HTTP_OK){

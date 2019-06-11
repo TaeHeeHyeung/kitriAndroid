@@ -12,7 +12,11 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         android:usesCleartextTraffic="true">
-        <activity android:name=".ViewCartActivity"></activity>
+        <activity android:name=".Ex13_1Activity"></activity>
+        <activity android:name=".Ex12_1Activity" />
+        <activity android:name=".Ex8_3Activity" />
+        <activity android:name=".Ex6_17Activity" />
+        <activity android:name=".ViewCartActivity" />
         <activity android:name=".ExchangeRateActivity" />
         <activity android:name=".CustomListViewNetworkActivity" />
         <activity android:name=".NetworkActivity" />
