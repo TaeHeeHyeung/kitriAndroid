@@ -1,9 +1,49 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Ex13_1Activity">
+    tools:context=".Ex13_1Activity"
+    android:orientation="vertical">
+    <ListView
+        android:id="@+id/lvMp3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></ListView>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/btPlay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="듣기"
+            android:onClick="play"></Button>
+        <Button
+            android:id="@+id/btPause"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="일시정지"
+            android:onClick="pause"></Button>
+        <Button
+            android:id="@+id/bt_Stop"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="중지"
+            android:onClick="stop"></Button>
+    </LinearLayout>
+    <TextView
+        android:id="@+id/tvResult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="실행중인음악:"/>
 
-</android.support.constraint.ConstraintLayout>
+    <ProgressBar
+        android:id="@+id/pb"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="invisible"
+        style="@style/Widget.AppCompat.ProgressBar.Horizontal"/>
+
+
+</LinearLayout>

@@ -172,6 +172,15 @@
                 android:textSize="20sp"
                 android:onClick="btClick"/>
 
+
+            <Button
+                android:id="@+id/bt_ex13_1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="음악 듣기"
+                android:textSize="20sp"
+                android:onClick="btClick"/>
+
         </LinearLayout>
 
     </ScrollView>

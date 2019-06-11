@@ -37,6 +37,7 @@ public class MainActivity extends AppCompatActivity {
         activityMap.put(R.id.bt_ex6_17, Ex6_17Activity.class);
         activityMap.put(R.id.bt_ex8_3, Ex8_3Activity.class);
         activityMap.put(R.id.bt_ex12_1, Ex12_1Activity.class);
+        activityMap.put(R.id.bt_ex13_1, Ex13_1Activity.class);
 
 
 //        Button btn = findViewById(R.id.bt1);
